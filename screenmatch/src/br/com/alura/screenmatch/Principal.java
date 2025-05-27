@@ -13,9 +13,9 @@ public class Principal {
 
     public static void main(String[] args) {
 
-        Filme meuFilme = new Filme("PrimeiroFilme");
+        Filme meuFilme = new Filme("PrimeiroFilme", 2023);
 //        meuFilme.setNome("PrimeiroFilme");
-        meuFilme.setAnoLancamento(2023);
+//        meuFilme.setAnoLancamento(2023);
         meuFilme.setDuracaoEmMinutos(180);
         meuFilme.setIncluidoNoPlano(true);
 
@@ -30,9 +30,9 @@ public class Principal {
 
         System.out.println("\n****** serie *******");
 
-        Serie serie = new Serie();
-        serie.setNome("GOT");
-        serie.setAnoLancamento(2013);
+        Serie serie = new Serie("got", 2000);
+//        serie.setNome("GOT");
+//        serie.setAnoLancamento(2013);
         serie.setAtiva(false);
         serie.setTemporadas(6);
         serie.setMinutosPorEpisodio(40);
@@ -41,9 +41,9 @@ public class Principal {
 
         System.out.println("duracao em minutos serie: " + serie.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Outro nome do Filme");
-        outroFilme.setAnoLancamento(2023);
+        Filme outroFilme = new Filme("outroFilme", 2009);
+//        outroFilme.setNome("Outro nome do Filme");
+//        outroFilme.setAnoLancamento(2023);
         outroFilme.setDuracaoEmMinutos(100);
         outroFilme.setIncluidoNoPlano(true);
 
@@ -65,10 +65,10 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        var maisUmFilme = new Filme();
+        var maisUmFilme = new Filme("ävatar", 3002);
         maisUmFilme.setDuracaoEmMinutos(200);
-        maisUmFilme.setNome("Ävatar");
-        maisUmFilme.setAnoLancamento(2010);
+//        maisUmFilme.setNome("Ävatar");
+//        maisUmFilme.setAnoLancamento(2010);
         maisUmFilme.avalia(10);
 
 //        ***** Lista de filmes
